@@ -1,3 +1,99 @@
 .top-border-orange {
   border-top: 2px solid #f2a463;
 }
+.right-border-orange {
+  border-right: 2px solid #f2a463;
+}
+.destinations-article {
+  border: 2px solid #f2a463;
+  padding: 20px;
+}
+.destinations-article button {
+  background-color: #f2a463;
+}
+.destinations-section img {
+  height: 200px;
+}
+.orange-heading {
+  text-transform: uppercase;
+  color: #f2a463;
+}
+.marg-btm {
+  margin-bottom: 40px;
+}
+.marg-top {
+  margin-top: 40px;
+}
+.img-opacity {
+  opacity: .5;
+}
+.position-relative {
+  position: relative;
+}
+.text-translate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.text-opacity {
+  opacity: .5;
+}
+.text-opacity button {
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.main-footer {
+  height: 50px;
+  background-color: #f2a463;
+  padding-top: 15px;
+  }
+
+
+.footer-nav li:not(:last-child) {
+  border-right: 1px solid black;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-link {
+  padding: 0 1rem;
+}
+.top-dest-height {
+  margin-bottom: 15px;
+  height: 500px;
+}
+.offer-article {
+  background-color: #ffeb99;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.gal-div {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+.upload-button-container {
+  position: relative;
+  display: block;
+  min-height: 115px;
+  overflow: hidden;
+}
+#uploadBtn {
+  background-image: url("../img/upload_photo.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  height: 100px;
+  width: 100px;
+  text-indent: -99999px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+@media (max-width: 768px) {
+  .right-border-orange {
+    border-right: none;
+    border-bottom: 2px solid #f2a463;
+  }
+  
+}
