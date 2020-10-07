@@ -48,7 +48,17 @@
   background-color: #f2a463;
   padding-top: 15px;
   }
-
+.btn-orange {
+  background-color: #f2a463;
+  color: #fff;
+}
+.btn-outline-orange {
+  color: #f2a463;
+  border-color: #f2a463;
+}
+.btn-outline-orange:hover {
+  background-color: #f2a463;
+}
 
 .footer-nav li:not(:last-child) {
   border-right: 1px solid black;
@@ -90,10 +100,30 @@
   bottom: 15px;
   right: 15px;
 }
+.blog-article {
+  border: 1px solid darkgrey;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.article-property {
+  display: inline-block;
+  margin-right: 20px;
+}
+.side-nav-header {
+  background-color: #f2a463;
+  color: #fff;
+}
+.side-nav-header h2 {
+  padding-left: 10px;
+}
+.commentText {
+  border: 2px solid #f2a463;
+  display: inline-block;
+}
 @media (max-width: 768px) {
   .right-border-orange {
     border-right: none;
     border-bottom: 2px solid #f2a463;
   }
-  
+
 }
