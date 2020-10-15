@@ -37,8 +37,6 @@ function postComment() {
   }
 }
 
-
-
 //post COMMENT function END
 
 //show ARTiCLE function
@@ -60,3 +58,42 @@ function readMore() {
 }
 
 //show ARTiCLE function END
+
+
+//Sort by Popular
+var headings = document.getElementsByTagName("h5");
+var popArt = document.getElementById("popular-articles").getElementsByTagName("p");
+for (var i = 0; i < 4; i++) {
+popArt[i].innerHTML =  headings[i].innerHTML;
+}
+//Sort by Popular END
+
+
+//Sort by Categories
+var categories = document.getElementsByClassName('article-categories');
+var catArt = document.getElementById("categories").getElementsByTagName("p");
+var destCounter = 0;
+var trTipCounter = 0;
+var summVacCounter = 0;
+for (var i = 0; i < categories.length; i++) {
+  if (categories[i].innerHTML === "Destinations") {
+    destCounter++;
+  } else if (categories[i].innerHTML === "Travel tips") {
+    trTipCounter++;
+  } else if (categories[i].innerHTML === "Summer vacation") {
+    summVacCounter++;
+  }
+  catArt[0].innerHTML ="Travel tips " +"(" + trTipCounter +")";
+  catArt[1].innerHTML ="Destinations " +"(" + destCounter +")";
+  catArt[2].innerHTML ="Summer vacation " +"(" + summVacCounter +")";
+}
+console.log(summVacCounter);
+//Sort by Categories END
+
+//Sort by Recent
+var datesArr = document.getElementsByTagName('time');
+var recArt = document.getElementById("recent-articles").getElementsByTagName("p");
+for (var i = 0; i < recArt.length; i++) {
+recArt[i].innerHTML =  datesArr[i].previousElementSibling.innerHTML;
+}
+//Sort by Recent END
