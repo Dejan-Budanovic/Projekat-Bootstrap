@@ -1,3 +1,8 @@
+//Active status
+linkBtn = document.getElementsByClassName("nav-link");
+
+//Active status END"
+
 //Subscribe ALERT function
 function subscribeAlert() {
   var userSubEmail = document.getElementById("InputSubEmail").value;
