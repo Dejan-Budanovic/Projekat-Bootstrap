@@ -90,7 +90,7 @@
   min-height: 115px;
   overflow: hidden;
 }
-#uploadBtn {
+#uploadImg {
   background-image: url("../img/upload_photo.png");
   background-size: cover;
   background-color: transparent;
@@ -101,6 +101,7 @@
   position: absolute;
   bottom: 15px;
   right: 15px;
+  cursor: pointer;
 }
 .blog-article {
   border: 1px solid darkgrey;
@@ -138,6 +139,15 @@
 }
 .img-padding {
   padding: 5px;
+}
+.total-sum-wrapper {
+  margin-top: 20px;
+}
+#total-sum {
+  font-size: 30px;
+  font-weight: 200;
+  float: right;
+  margin-right: 50px;
 }
 @media (max-width: 768px) {
   .right-border-orange {
